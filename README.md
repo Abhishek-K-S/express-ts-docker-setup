@@ -34,10 +34,10 @@ To use this script, ensure that you have the following prerequisites installed o
    docker compose up
    ```
    Initial setup might take some time.
-   Once the server is up, it will be running on port number 9999, you can change this by editing the .env file.
+   Once the server is up, it will be running on port number 9999.
    happyHacking!!
 
-##Note
+## Note
 1. Once installed, for subsequent runs, you can run
    ```bash
    docker compose up
