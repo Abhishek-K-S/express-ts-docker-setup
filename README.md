@@ -14,9 +14,9 @@ To use this script, ensure that you have the following prerequisites installed o
 ## Method 1: Using bash script (preferred, requires rootless-docker)
 1. Run the following command inside your project directory
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/Abhishek-K-S/express-ts-setup-bash/main/setup.sh --ssl-no-revoke | bash
+   curl -fsSL https://raw.githubusercontent.com/Abhishek-K-S/express-ts-docker-setup/main/setup.sh --ssl-no-revoke | bash
    ```
-2. Your server is already up. Server runs on port 9999 by default. happyHacking!!
+2. Voila!!. Your server is already up. Server runs on port 9999 by default. happyHacking!!
 
 ## Method 2: Cloning
 
@@ -36,3 +36,15 @@ To use this script, ensure that you have the following prerequisites installed o
    Initial setup might take some time.
    Once the server is up, it will be running on port number 9999, you can change this by editing the .env file.
    happyHacking!!
+
+##Note
+1. Once installed, for subsequent runs, you can run
+   ```bash
+   docker compose up
+   ```
+2. To stop the server, run:
+   ```bash
+   docker compose down
+   ```
+3. Look for docker documentation for controlling your containers.
+4. For changing port numbers, edit .env file and also docker-compose.yaml port mappings
