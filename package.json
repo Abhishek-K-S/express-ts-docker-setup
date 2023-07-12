@@ -1,0 +1,15 @@
+{
+  "name": "express-ts-docker",
+  "version": "1.0.0",
+  "description": "Created using BashScript (https://github.com/Abhishek-K-S/express-ts-docker-setup)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "npx concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
+

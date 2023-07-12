@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+    #express server
+    express_server:
+        container_name: express_ts_server
+        build:
+            dockerfile: Dockerfile
+        labels:
+            - com.docker.compose.container-number=8
+        restart: unless-stopped
+        volumes:
+            - ./:/server
+        ports:
+            - 9999:9999
+        env_file:
+            - ./.env
